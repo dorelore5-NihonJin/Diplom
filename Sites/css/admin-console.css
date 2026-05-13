@@ -1,0 +1,318 @@
+/* Shared admin/support console styles */
+.admin-console {
+    padding: 40px 0 80px;
+    min-height: calc(100vh - 160px);
+    background: var(--page-bg, var(--bg));
+}
+
+.admin-console .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.console-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.console-hero {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 24px;
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(248, 250, 252, 0.98));
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+[data-theme="dark"] .console-hero {
+    border-color: rgba(148, 163, 184, 0.25);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(30, 41, 59, 0.85));
+    box-shadow: 0 30px 60px rgba(15, 23, 42, 0.25);
+}
+
+.hero-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.hero-icon.gradient-indigo {
+    background: linear-gradient(135deg, #6366f1, #9333ea);
+}
+
+.hero-icon.gradient-sky {
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+.hero-icon.gradient-amber {
+    background: linear-gradient(135deg, #fbbf24, #f97316);
+}
+
+.hero-meta h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.hero-meta p {
+    margin: 6px 0 0;
+    color: var(--text-secondary);
+}
+
+.hero-actions {
+    margin-left: auto;
+}
+
+.console-header h1 {
+    font-size: 32px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.console-header p {
+    color: var(--text-secondary);
+    margin-top: 6px;
+}
+
+.console-header .btn-link,
+.console-header .btn-outline-link {
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    padding: 10px 18px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.console-header .btn-link:hover,
+.console-header .btn-outline-link:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.console-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.console-stats .stat-value,
+.console-stats strong {
+    font-size: 28px;
+}
+
+.console-stat,
+.stats-bar .stat-item,
+.tickets-stats .stat-card,
+.moderate-header .stat-card {
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: var(--bg-secondary);
+    padding: 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.console-stat .stat-label,
+.stats-bar .stat-label,
+.tickets-stats .stat-label {
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.console-stat .stat-value,
+.stats-bar .stat-value,
+.tickets-stats strong {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.console-filters,
+.filter-bar,
+.tickets-filters,
+.moderate-filters {
+    border-radius: 18px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: var(--bg-secondary);
+    padding: 18px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    align-items: flex-end;
+}
+
+.console-filters .filter-group,
+.tickets-filters .filter-field,
+.moderate-filters .filter-group {
+    min-width: 200px;
+    flex: 1;
+}
+
+.console-filters label,
+.tickets-filters label,
+.moderate-filters label {
+    font-weight: 600;
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: inline-flex;
+    gap: 6px;
+    align-items: center;
+    color: var(--text-secondary);
+}
+
+.console-filters select,
+.tickets-filters select,
+.moderate-filters select,
+.console-filters input,
+.tickets-filters input {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: var(--bg);
+    color: var(--text);
+}
+
+.console-search {
+    flex: 1;
+    min-width: 260px;
+}
+
+.console-search .search-wrapper,
+.console-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    background: var(--bg);
+}
+
+.console-search i {
+    color: var(--text-secondary);
+}
+
+.console-search input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    padding: 12px 0;
+    color: var(--text);
+}
+
+.console-search input:focus {
+    outline: none;
+}
+
+.console-filters .btn-reset,
+.console-filters .btn-reset-filters,
+.tickets-filters .btn-reset {
+    border-radius: 12px;
+    border: none;
+    background: rgba(248, 113, 113, 0.12);
+    color: #f87171;
+    padding: 10px 16px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.console-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.console-card {
+    border-radius: 24px;
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    background: var(--bg-secondary);
+    padding: 22px;
+    box-shadow: 0 18px 40px rgba(15, 23, 42, 0.18);
+}
+
+.console-empty,
+.empty-state {
+    border-radius: 20px;
+    border: 1px dashed rgba(148, 163, 184, 0.4);
+    background: rgba(15, 23, 42, 0.6);
+    padding: 40px;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+.console-empty i,
+.empty-state i {
+    font-size: 36px;
+    margin-bottom: 12px;
+    color: var(--primary);
+}
+
+.console-pagination,
+.pagination {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.console-pagination a,
+.pagination a,
+.pagination-btn {
+    border-radius: 10px;
+    padding: 8px 14px;
+    border: 1px solid rgba(148, 163, 184, 0.4);
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.console-pagination a.active,
+.pagination a.active {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
+    border-color: transparent;
+}
+
+.status-pill,
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-pill i {
+    font-size: 12px;
+}
