@@ -1,0 +1,452 @@
+<mxfile host="app.diagrams.net" agent="HyperPC-Generator" pages="2">
+  <diagram id="logical-db-hyperpc" name="Логическая схема БД">
+    <mxGraphModel dx="2249" dy="1015" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1600" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lg_user" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf" value="&lt;div&gt;&lt;b&gt;USER&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Username&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Email&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Role&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="250" x="80" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_category" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366" value="&lt;div&gt;&lt;b&gt;ACCESSORIES CATEGORY&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Category ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Description&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="270" x="520" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_component" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#d5e8d4;strokeColor=#82b366" value="&lt;div&gt;&lt;b&gt;ACCESSORY&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Accessory ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Manufacturer&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Model&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Price&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Specifications&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Availability&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Rating&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="280" x="920" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_build" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656" value="&lt;div&gt;&lt;b&gt;PC CONFIGURATION&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Configuration ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Configuration Name&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Purpose&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Total Cost&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Power Consumption&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Viewable&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="270" x="520" y="405" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_build_component" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#fff2cc;strokeColor=#d6b656" value="&lt;div&gt;&lt;b&gt;ASSEMBLY COMPONENTS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Record ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Assembly&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Quantity&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="260" x="930" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_order" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00" value="&lt;div&gt;&lt;b&gt;ORDER&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Order ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Order Number&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Total Amount&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Shipping Method&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Payment Method&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="270" x="520" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_order_item" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#ffe6cc;strokeColor=#d79b00" value="&lt;b&gt;ORDER DETAILS&lt;br&gt;Record ID&lt;br&gt;Order&lt;br&gt;Item&lt;br&gt;Item Name&lt;br&gt;Quantity&lt;br&gt;Price&lt;/b&gt;" vertex="1">
+          <mxGeometry height="160" width="270" x="920" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_review" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6" value="&lt;div&gt;&lt;b&gt;REVIEW&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Review ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Part&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Rating&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Review text&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="170" width="250" x="1280" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_game" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450" value="&lt;div&gt;&lt;b&gt;GAME&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Game ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Title&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Release Year&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Minimum Requirements&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Recommended Requirements&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="250" x="1280" y="656" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_benchmark" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#f8cecc;strokeColor=#b85450" value="&lt;div&gt;&lt;b&gt;TEST RESULTS&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Result ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Component&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Game&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Resolution&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Settings&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Average FPS&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="160" width="250" x="1280" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_ticket" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6" value="&lt;div&gt;&lt;b&gt;SUPPORT TICKET&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Ticket ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Ticket Number&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Subject&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Category&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Status&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Priority&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="280" x="65" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_reply" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#e1d5e7;strokeColor=#9673a6" value="&lt;div&gt;&lt;b&gt;RESPONSE TO A REQUEST&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Response ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Request&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Message&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Employee ID&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="65" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_notification" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;spacing=10;fontSize=14;strokeWidth=2;fillColor=#dae8fc;strokeColor=#6c8ebf" value="&lt;div&gt;&lt;b&gt;NOTIFICATION&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Notification ID&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;User&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Order&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Event type&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Notification text&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;Read status&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="270" x="-280" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e1" edge="1" parent="1" source="lg_user" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_build" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e2" edge="1" parent="1" source="lg_user" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" target="lg_order" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e3" edge="1" parent="1" source="lg_user" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_ticket" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lg_review" value="1:N">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="80" />
+              <mxPoint x="1405" y="80" />
+            </Array>
+            <mxPoint x="200" y="417" as="sourcePoint" />
+            <mxPoint x="1390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg_e5" edge="1" parent="1" source="lg_user" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_notification" value="1:N">
+          <mxGeometry relative="1" as="geometry"><Array as="points" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lg_e6" edge="1" parent="1" source="lg_category" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_component" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e7" edge="1" parent="1" source="lg_build" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_build_component" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e8" edge="1" parent="1" source="lg_component" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_build_component" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e9" edge="1" parent="1" source="lg_order" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_order_item" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e10" edge="1" parent="1" source="lg_component" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="lg_order_item" value="1:N">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1240" y="390" />
+              <mxPoint x="1240" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lg_e11" edge="1" parent="1" source="lg_component" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_review" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e12" edge="1" parent="1" source="lg_game" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_benchmark" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lg_e13" edge="1" parent="1" source="lg_component" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="lg_benchmark" value="1:N">
+          <mxGeometry relative="1" as="geometry"><Array as="points" /></mxGeometry>
+        </mxCell>
+        <mxCell id="lg_e14" edge="1" parent="1" source="lg_ticket" style="endArrow=classic;html=1;rounded=0;strokeWidth=2;fontSize=13;labelBackgroundColor=#ffffff" target="lg_reply" value="1:N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <diagram id="physical-db-hyperpc" name="Физическая схема БД">
+    <mxGraphModel dx="3200" dy="2000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3000" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GROUP LABELS (background swim-lanes per domain)
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- GROUP: Пользователи -->
+        <mxCell id="grp_users" value="👤  Пользователи &amp; Сессии" style="swimlane;startSize=34;fillColor=#e8f4fd;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;fontColor=#1a5276;strokeWidth=2;rounded=1;arcSize=4;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="760" height="820" as="geometry" />
+        </mxCell>
+
+        <!-- GROUP: Компоненты -->
+        <mxCell id="grp_components" value="🖥  Категории &amp; Компоненты" style="swimlane;startSize=34;fillColor=#eafaf1;strokeColor=#82b366;fontStyle=1;fontSize=13;fontColor=#1e8449;strokeWidth=2;rounded=1;arcSize=4;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="1080" height="820" as="geometry" />
+        </mxCell>
+
+        <!-- GROUP: Сборки -->
+        <mxCell id="grp_builds" value="⚙  Сборки ПК" style="swimlane;startSize=34;fillColor=#fefde7;strokeColor=#d6b656;fontStyle=1;fontSize=13;fontColor=#7d6608;strokeWidth=2;rounded=1;arcSize=4;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="760" height="640" as="geometry" />
+        </mxCell>
+
+        <!-- GROUP: Заказы -->
+        <mxCell id="grp_orders" value="🛒  Заказы &amp; Уведомления" style="swimlane;startSize=34;fillColor=#fff5e6;strokeColor=#d79b00;fontStyle=1;fontSize=13;fontColor=#784212;strokeWidth=2;rounded=1;arcSize=4;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="840" y="900" width="1080" height="640" as="geometry" />
+        </mxCell>
+
+        <!-- GROUP: Отзывы + Тикеты -->
+        <mxCell id="grp_support" value="💬  Отзывы &amp; Поддержка" style="swimlane;startSize=34;fillColor=#f5eef8;strokeColor=#9673a6;fontStyle=1;fontSize=13;fontColor=#512e5f;strokeWidth=2;rounded=1;arcSize=4;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="40" y="1580" width="760" height="600" as="geometry" />
+        </mxCell>
+
+        <!-- GROUP: Игры + Бенчмарки -->
+        <mxCell id="grp_games" value="🎮  Игры &amp; Бенчмарки" style="swimlane;startSize=34;fillColor=#fdedec;strokeColor=#b85450;fontStyle=1;fontSize=13;fontColor=#78281f;strokeWidth=2;rounded=1;arcSize=4;spacingLeft=10;" vertex="1" parent="1">
+          <mxGeometry x="840" y="1580" width="1080" height="600" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             TABLE: users  (внутри grp_users)
+        ════════════════════════════════════════════════════════════════ -->
+        <mxCell id="ph_users" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#6c8ebf;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;border-radius:4px 4px 0 0;&quot;&gt;🗄 users&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c8dff5;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1a3a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;username&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;email&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) UNIQUE NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;password&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;role&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('user','admin','moderator')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('active','blocked','deleted')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; blocked_by&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NULL → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;avatar&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;bio&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;location&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_users">
+          <mxGeometry x="20" y="50" width="380" height="310" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: password_resets -->
+        <mxCell id="ph_password_resets" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#6c8ebf;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 password_resets&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c8dff5;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1a3a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;token&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) UNIQUE NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;expires_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DATETIME NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_users">
+          <mxGeometry x="420" y="50" width="320" height="155" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: user_sessions -->
+        <mxCell id="ph_user_sessions" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#6c8ebf;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 user_sessions&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c8dff5;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1a3a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;session_hash&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(128) UNIQUE NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;ip_address&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(45)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;ip_location&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(120)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;user_agent&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;platform&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;browser&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;device&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DATETIME NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;last_seen&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DATETIME NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_users">
+          <mxGeometry x="420" y="220" width="320" height="300" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: user_block_log -->
+        <mxCell id="ph_user_block_log" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#6c8ebf;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 user_block_log&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c8dff5;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1a3a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; blocked_by&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;reason&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#edf4fc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;blocked_until&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DATETIME NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#6c8ebf;fillColor=#dae8fc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_users">
+          <mxGeometry x="20" y="380" width="380" height="185" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: component_reviews (в users group т.к. FK user_id) -->
+        <mxCell id="ph_component_reviews" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#9673a6;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 component_reviews&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#d9c8e8;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#3b1a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_category_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → categories.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;rating&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) NOT NULL (1-5)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;title&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(160)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;summary&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;pros&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;cons&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;recommended&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('pending','approved','rejected')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_users">
+          <mxGeometry x="20" y="590" width="400" height="400" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             COMPONENT GROUP TABLES
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- TABLE: categories -->
+        <mxCell id="ph_categories" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#82b366;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 categories&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c2ddb9;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1e4d0d;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;slug&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) UNIQUE NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;icon&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;description&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_components">
+          <mxGeometry x="20" y="50" width="360" height="185" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: components_cpu -->
+        <mxCell id="ph_components_cpu" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#82b366;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 components_cpu&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c2ddb9;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1e4d0d;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; category_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → categories.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;manufacturer&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;model&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(150)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;price&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(10,2) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;release_year&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;SMALLINT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;specs&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;performance_score&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;power_consumption&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED (Вт)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;cpu_cores&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;cpu_threads&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;cpu_base_clock&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(4,2) (ГГц)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;socket_type&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;stock_status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('in_stock','out_of_stock','preorder')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;stock_quantity&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;rating&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(3,2) DEFAULT 0.00&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_components">
+          <mxGeometry x="20" y="260" width="360" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: components_gpu -->
+        <mxCell id="ph_components_gpu" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#82b366;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 components_gpu&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c2ddb9;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1e4d0d;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; category_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → categories.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;manufacturer&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;model&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(150)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;price&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(10,2) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;release_year&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;SMALLINT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;specs&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;performance_score&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;power_consumption&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED (Вт)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;gpu_memory&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED (ГБ)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;gpu_memory_type&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(20)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;pcie_version&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(2,1)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;stock_status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('in_stock','out_of_stock','preorder')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;stock_quantity&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;rating&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(3,2) DEFAULT 0.00&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_components">
+          <mxGeometry x="400" y="50" width="360" height="500" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: components_other (mobo/ram/storage/psu/case/cooling) -->
+        <mxCell id="ph_components_other" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#82b366;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 components_mobo / ram / storage / psu / case / cooling&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#c2ddb9;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#1e4d0d;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; category_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → categories.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;manufacturer&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;model&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(150)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;price&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(10,2) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;release_year&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;SMALLINT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;warranty_months&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;SMALLINT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;image&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;specs&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;performance_score&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;power_consumption&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED (Вт)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;compatibility_info&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;stock_status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('in_stock','out_of_stock','preorder')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;stock_quantity&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;rating&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(3,2) DEFAULT 0.00&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;tier&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('budget','mid','high','extreme')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;font-style:italic;color:#888;&quot;&gt;+ специфические поля категории&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#888;&quot;&gt;(varies per table)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#eaf6e4;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#82b366;fillColor=#d5e8d4;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_components">
+          <mxGeometry x="770" y="50" width="290" height="540" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             BUILDS GROUP
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- TABLE: user_builds -->
+        <mxCell id="ph_user_builds" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d6b656;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 user_builds&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0dfa0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d3a00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;build_name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;description&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;purpose&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('gaming','work','study','content')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;components&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;user_session&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;total_price&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(10,2) DEFAULT 0.00&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;total_power&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;estimated_fps&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;is_public&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_builds">
+          <mxGeometry x="20" y="50" width="360" height="355" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: build_components -->
+        <mxCell id="ph_build_components" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d6b656;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 build_components&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0dfa0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d3a00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; build_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → user_builds.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;quantity&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED DEFAULT 1&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_builds">
+          <mxGeometry x="400" y="50" width="340" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: build_likes -->
+        <mxCell id="ph_build_likes" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d6b656;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 build_likes&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0dfa0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d3a00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; build_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → user_builds.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;UNIQUE KEY&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#888;font-style:italic;&quot;&gt;(build_id, user_id)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_builds">
+          <mxGeometry x="400" y="210" width="340" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: build_comments -->
+        <mxCell id="ph_build_comments" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d6b656;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 build_comments&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0dfa0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d3a00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; build_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → user_builds.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;comment&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf6dc;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; parent_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NULL → self.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_builds">
+          <mxGeometry x="400" y="395" width="340" height="185" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             ORDERS GROUP
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- TABLE: orders -->
+        <mxCell id="ph_orders" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d79b00;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 orders&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f5d98b;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d2d00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;order_number&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50) UNIQUE NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('pending','processing','shipped','delivered','cancelled')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;total_amount&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(10,2) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;delivery_address&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;delivery_method&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;payment_method&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;payment_status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('pending','paid','refunded','failed')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;notes&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_orders">
+          <mxGeometry x="20" y="50" width="360" height="340" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: order_items -->
+        <mxCell id="ph_order_items" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d79b00;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 order_items&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f5d98b;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d2d00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; order_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → orders.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;component_category&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;quantity&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NOT NULL DEFAULT 1&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;price&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;DECIMAL(10,2) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_orders">
+          <mxGeometry x="400" y="50" width="340" height="230" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: order_notifications -->
+        <mxCell id="ph_order_notifications" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d79b00;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 order_notifications&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f5d98b;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d2d00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;order_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → orders.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;type&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('status_change','payment','delivery')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;message&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;is_read&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_orders">
+          <mxGeometry x="400" y="300" width="340" height="215" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: support_messages -->
+        <mxCell id="ph_support_messages" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#d79b00;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 support_messages&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f5d98b;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d2d00;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; order_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → orders.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;message&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;is_support&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;is_read&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fff5e0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#d79b00;fillColor=#ffe6cc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_orders">
+          <mxGeometry x="760" y="50" width="300" height="230" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             SUPPORT GROUP
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- TABLE: support_tickets -->
+        <mxCell id="ph_support_tickets" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#9673a6;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 support_tickets&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#d9c8e8;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#3b1a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;ticket_number&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(50) UNIQUE NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;subject&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;category&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('order','technical','billing','other')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;message&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;contact_email&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;contact_name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(100)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;status&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('open','in_progress','resolved','closed')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;priority&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('low','medium','high','critical')&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;updated_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP ON UPDATE NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_support">
+          <mxGeometry x="20" y="50" width="360" height="355" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: ticket_replies -->
+        <mxCell id="ph_ticket_replies" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#9673a6;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 ticket_replies&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#d9c8e8;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#3b1a5c;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; ticket_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → support_tickets.id&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; user_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → users.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;is_staff&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TINYINT(1) DEFAULT 0&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0eaf6;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;message&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TEXT NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#9673a6;fillColor=#e1d5e7;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_support">
+          <mxGeometry x="400" y="50" width="340" height="205" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             GAMES GROUP
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- TABLE: games -->
+        <mxCell id="ph_games" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#b85450;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 games&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0c0be;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d0a08;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;name&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255) NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf0f0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;image&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(255)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;release_year&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf0f0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;min_requirements&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;recommended_requirements&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;LONGTEXT (JSON)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf0f0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;created_at&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;TIMESTAMP DEFAULT NOW()&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_games">
+          <mxGeometry x="20" y="50" width="360" height="215" as="geometry" />
+        </mxCell>
+
+        <!-- TABLE: benchmarks -->
+        <mxCell id="ph_benchmarks" value="&lt;table width=&quot;100%&quot; cellpadding=&quot;4&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td colspan=&quot;2&quot; style=&quot;background:#b85450;color:#fff;font-weight:bold;font-size:13px;padding:7px 10px;&quot;&gt;🗄 benchmarks&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#f0c0be;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;color:#4d0a08;&quot;&gt;&lt;b&gt;🔑 PK&lt;/b&gt; id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED AUTO_INCREMENT&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; component_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED (→ components_gpu.id)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf0f0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;&lt;i&gt;🔗 FK&lt;/i&gt; game_id&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED → games.id&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;resolution&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;VARCHAR(20) (напр. 1920x1080)&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf0f0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;settings&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;ENUM('low','medium','high','ultra')&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;avg_fps&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED NOT NULL&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&quot;background:#fdf0f0;&quot;&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;min_fps&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding:3px 8px;font-size:11px;&quot;&gt;max_fps&lt;/td&gt;&lt;td style=&quot;font-size:11px;color:#555;&quot;&gt;INT UNSIGNED&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;" style="text;html=1;strokeColor=#b85450;fillColor=#f8cecc;align=left;verticalAlign=top;spacingLeft=0;spacingTop=0;overflow=fill;rotatable=0;whiteSpace=wrap;rounded=1;arcSize=3;strokeWidth=2;" vertex="1" parent="grp_games">
+          <mxGeometry x="400" y="50" width="360" height="250" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             RELATIONSHIPS / EDGES  (absolute coordinates на холсте)
+             Все таблицы внутри групп, поэтому edges ссылаются на ID ячеек,
+             которые находятся внутри групп — draw.io позволяет соединять
+             через группы напрямую по ID.
+        ════════════════════════════════════════════════════════════════ -->
+
+        <!-- users → password_resets -->
+        <mxCell id="e_u_pr" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#6c8ebf;fontColor=#1a3a5c;fontSize=10;labelBackgroundColor=#e8f4fd;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="ph_users" target="ph_password_resets">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- users → user_sessions -->
+        <mxCell id="e_u_us" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#6c8ebf;fontColor=#1a3a5c;fontSize=10;labelBackgroundColor=#e8f4fd;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_user_sessions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- users → user_block_log -->
+        <mxCell id="e_u_ubl" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#6c8ebf;fontColor=#1a3a5c;fontSize=10;labelBackgroundColor=#e8f4fd;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_user_block_log">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- users → component_reviews -->
+        <mxCell id="e_u_cr" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#6c8ebf;fontColor=#1a3a5c;fontSize=10;labelBackgroundColor=#e8f4fd;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_component_reviews">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- users → user_builds -->
+        <mxCell id="e_u_ub" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#6c8ebf;fontColor=#1a3a5c;fontSize=10;labelBackgroundColor=#e8f4fd;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="ph_users" target="ph_user_builds">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="870" />
+              <mxPoint x="60" y="870" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → orders -->
+        <mxCell id="e_u_ord" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d79b00;fontColor=#784212;fontSize=10;labelBackgroundColor=#fff5e6;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.3;entryDx=0;entryDy=0;" edge="1" parent="1" source="ph_users" target="ph_orders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="420" />
+              <mxPoint x="820" y="1052" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → support_tickets -->
+        <mxCell id="e_u_st" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#9673a6;fontColor=#512e5f;fontSize=10;labelBackgroundColor=#f5eef8;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ph_users" target="ph_support_tickets">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="150" y="880" />
+              <mxPoint x="150" y="1580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → build_likes -->
+        <mxCell id="e_u_bl" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d6b656;fontColor=#7d6608;fontSize=10;labelBackgroundColor=#fefde7;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_build_likes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="880" />
+              <mxPoint x="560" y="960" />
+              <mxPoint x="1290" y="960" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → build_comments -->
+        <mxCell id="e_u_bc" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d6b656;fontColor=#7d6608;fontSize=10;labelBackgroundColor=#fefde7;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_build_comments">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="875" />
+              <mxPoint x="580" y="1000" />
+              <mxPoint x="1295" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → order_notifications -->
+        <mxCell id="e_u_on" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d79b00;fontColor=#784212;fontSize=10;labelBackgroundColor=#fff5e6;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_order_notifications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="800" y="880" />
+              <mxPoint x="800" y="1100" />
+              <mxPoint x="1290" y="1100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → support_messages -->
+        <mxCell id="e_u_sm" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d79b00;fontColor=#784212;fontSize=10;labelBackgroundColor=#fff5e6;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="890" />
+              <mxPoint x="810" y="1150" />
+              <mxPoint x="1650" y="1150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → ticket_replies -->
+        <mxCell id="e_u_tr" value="FK user_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#9673a6;fontColor=#512e5f;fontSize=10;labelBackgroundColor=#f5eef8;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_users" target="ph_ticket_replies">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="890" />
+              <mxPoint x="170" y="1700" />
+              <mxPoint x="1290" y="1700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- categories → components_cpu -->
+        <mxCell id="e_cat_cpu" value="FK category_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#82b366;fontColor=#1e4d0d;fontSize=10;labelBackgroundColor=#eafaf1;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_categories" target="ph_components_cpu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- categories → components_gpu -->
+        <mxCell id="e_cat_gpu" value="FK category_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#82b366;fontColor=#1e4d0d;fontSize=10;labelBackgroundColor=#eafaf1;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_categories" target="ph_components_gpu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- categories → components_other -->
+        <mxCell id="e_cat_oth" value="FK category_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#82b366;fontColor=#1e4d0d;fontSize=10;labelBackgroundColor=#eafaf1;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_categories" target="ph_components_other">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- user_builds → build_components -->
+        <mxCell id="e_ub_bc" value="FK build_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d6b656;fontColor=#7d6608;fontSize=10;labelBackgroundColor=#fefde7;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_user_builds" target="ph_build_components">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- user_builds → build_likes -->
+        <mxCell id="e_ub_bl" value="FK build_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d6b656;fontColor=#7d6608;fontSize=10;labelBackgroundColor=#fefde7;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_user_builds" target="ph_build_likes">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- user_builds → build_comments -->
+        <mxCell id="e_ub_bco" value="FK build_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d6b656;fontColor=#7d6608;fontSize=10;labelBackgroundColor=#fefde7;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_user_builds" target="ph_build_comments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- orders → order_items -->
+        <mxCell id="e_o_oi" value="FK order_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d79b00;fontColor=#784212;fontSize=10;labelBackgroundColor=#fff5e6;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_orders" target="ph_order_items">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- orders → order_notifications -->
+        <mxCell id="e_o_on" value="FK order_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d79b00;fontColor=#784212;fontSize=10;labelBackgroundColor=#fff5e6;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_orders" target="ph_order_notifications">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- orders → support_messages -->
+        <mxCell id="e_o_sms" value="FK order_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#d79b00;fontColor=#784212;fontSize=10;labelBackgroundColor=#fff5e6;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_orders" target="ph_support_messages">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- support_tickets → ticket_replies -->
+        <mxCell id="e_st_tr" value="FK ticket_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#9673a6;fontColor=#512e5f;fontSize=10;labelBackgroundColor=#f5eef8;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_support_tickets" target="ph_ticket_replies">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- games → benchmarks -->
+        <mxCell id="e_g_bm" value="FK game_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#b85450;fontColor=#78281f;fontSize=10;labelBackgroundColor=#fdedec;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;" edge="1" parent="1" source="ph_games" target="ph_benchmarks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- components_gpu → benchmarks (cross-group) -->
+        <mxCell id="e_gpu_bm" value="FK component_id" style="edgeStyle=orthogonalEdgeStyle;html=1;rounded=1;strokeWidth=2;strokeColor=#b85450;fontColor=#78281f;fontSize=10;labelBackgroundColor=#fdedec;labelBorderColor=none;endArrow=ERmany;startArrow=ERone;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="ph_components_gpu" target="ph_benchmarks">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1105" y="900" />
+              <mxPoint x="1105" y="1660" />
+              <mxPoint x="1290" y="1660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

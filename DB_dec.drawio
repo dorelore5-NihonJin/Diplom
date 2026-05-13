@@ -1,0 +1,273 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0">
+  <diagram name="HyperPC Physical ERD" id="hyperpc-physical-erd">
+    <mxGraphModel dx="3257" dy="1222" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1900" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-4" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_user_builds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-5" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_component_reviews">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="355" />
+              <mxPoint x="110" y="925" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-6" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_build_likes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="355" />
+              <mxPoint x="110" y="750" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-7" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_build_comments">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="355" />
+              <mxPoint x="110" y="593" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-12" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_support_tickets">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-125" y="10" />
+              <mxPoint x="1560" y="10" />
+              <mxPoint x="1560" y="135" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-15" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_ticket_replies">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-125" y="10" />
+              <mxPoint x="1560" y="10" />
+              <mxPoint x="1560" y="328" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-17" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-125" y="10" />
+              <mxPoint x="1560" y="10" />
+              <mxPoint x="1560" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-18" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_user_sessions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-19" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_orders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-125" y="10" />
+              <mxPoint x="1020" y="10" />
+              <mxPoint x="1020" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-23" edge="1" parent="1" source="t_users" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_order_notifications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-125" y="10" />
+              <mxPoint x="1020" y="10" />
+              <mxPoint x="1020" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_users" parent="1" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;users&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;      username VARCHAR(100)&lt;br&gt;      email VARCHAR(150)&lt;br&gt;      password_hash VARCHAR(255)&lt;br&gt;      role ENUM(user,admin,moderator)&lt;br&gt;      status ENUM(active,blocked,pending)&lt;br&gt;FK  blocked_by → users.id&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="190" width="230" x="-260" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="t_user_sessions" parent="1" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;user_sessions&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;      session_hash VARCHAR(255)&lt;br&gt;      ip_address VARCHAR(45)&lt;br&gt;      created_at TIMESTAMP&lt;br&gt;      expires_at TIMESTAMP" vertex="1">
+          <mxGeometry height="160" width="200" x="-245" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-1" edge="1" parent="1" source="t_password_resets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="t_users">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-330" y="771" />
+              <mxPoint x="-330" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_password_resets" parent="1" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;password_resets&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;      token VARCHAR(255)&lt;br&gt;      expires_at TIMESTAMP&lt;br&gt;      used TINYINT" vertex="1">
+          <mxGeometry height="137.5" width="180" x="-245" y="702.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-2" edge="1" parent="1" source="t_user_block_log" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="t_users">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-330" y="941" />
+              <mxPoint x="-330" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_user_block_log" parent="1" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;user_block_log&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;FK  blocked_by → users.id&lt;br&gt;      reason TEXT&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="142.5" width="180" x="-245" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-10" edge="1" parent="1" source="t_user_builds" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="t_build_likes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="540" y="250" />
+              <mxPoint x="540" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_user_builds" parent="1" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;user_builds&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;      build_name VARCHAR(200)&lt;br&gt;      total_price DECIMAL(10,2)&lt;br&gt;      is_public TINYINT&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="160" width="190" x="250" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-9" edge="1" parent="1" source="t_build_components" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_user_builds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t_build_components" parent="1" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;build_components&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/div&gt;PK  id INT&lt;br&gt;FK  build_id → user_builds.id&lt;br&gt;      component_type VARCHAR(50)&lt;br&gt;      component_id INT&lt;br&gt;      quantity SMALLINT" vertex="1">
+          <mxGeometry height="140" width="210" x="240" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-8" edge="1" parent="1" source="t_build_comments" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="t_user_builds">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="560" />
+              <mxPoint x="200" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_build_comments" parent="1" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;build_comments&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  build_id → user_builds.id&lt;br&gt;FK  user_id → users.id&lt;br&gt;FK  parent_id → build_comments.id&lt;br&gt;      comment TEXT&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="155" width="230" x="230" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="t_build_likes" parent="1" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;build_likes&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  build_id → user_builds.id&lt;br&gt;FK  user_id → users.id&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="120" width="210" x="240" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="t_component_reviews" parent="1" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;component_reviews&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;      component_type VARCHAR(50)&lt;br&gt;      component_id INT&lt;br&gt;      rating TINYINT&lt;br&gt;      status ENUM&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="170" width="210" x="240" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-30" edge="1" parent="1" source="t_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_components_psu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="67" />
+              <mxPoint x="600" y="893" />
+              <mxPoint x="650" y="893" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-31" edge="1" parent="1" source="t_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_components_storage">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="67" />
+              <mxPoint x="600" y="1107" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-33" edge="1" parent="1" source="t_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="t_components_mobo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="67.5" />
+              <mxPoint x="970" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-35" edge="1" parent="1" source="t_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_components_gpu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="970" y="67" />
+              <mxPoint x="970" y="1095" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-36" edge="1" parent="1" source="t_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_components_cpu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-37" edge="1" parent="1" source="t_categories" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="t_components_ram">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="67.5" />
+              <mxPoint x="600" y="475" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_categories" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;categories&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;      name VARCHAR(100)&lt;br&gt;      slug VARCHAR(100)" vertex="1">
+          <mxGeometry height="95" width="160" x="700" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-34" edge="1" parent="1" source="t_components_gpu" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="t_benchmarks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t_components_gpu" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;components_gpu&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  category_id → categories.id&lt;br&gt;      name VARCHAR(255)&lt;br&gt;      price DECIMAL(10,2)&lt;br&gt;      gpu_memory INT&lt;br&gt;      gpu_memory_type VARCHAR(10)&lt;br&gt;      stock_status ENUM&lt;br&gt;      tier ENUM" vertex="1">
+          <mxGeometry height="190" width="220" x="1090" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="t_components_cpu" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;components_cpu&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  category_id → categories.id&lt;br&gt;      name VARCHAR(255)&lt;br&gt;      price DECIMAL(10,2)&lt;br&gt;      cpu_cores INT&lt;br&gt;      socket_type VARCHAR(50)&lt;br&gt;      stock_status ENUM&lt;br&gt;      tier ENUM" vertex="1">
+          <mxGeometry height="185" width="200" x="680" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="t_components_ram" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;components_ram&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  category_id → categories.id&lt;br&gt;      name VARCHAR(255)&lt;br&gt;      price DECIMAL(10,2)&lt;br&gt;      ram_capacity INT&lt;br&gt;      ram_type VARCHAR(10)&lt;br&gt;      stock_status ENUM&lt;br&gt;      tier ENUM" vertex="1">
+          <mxGeometry height="190" width="200" x="680" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="t_components_mobo" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;components_mobo&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  category_id → categories.id&lt;br&gt;      name VARCHAR(255)&lt;br&gt;      price DECIMAL(10,2)&lt;br&gt;      mobo_chipset VARCHAR(50)&lt;br&gt;      socket_type VARCHAR(50)&lt;br&gt;      stock_status ENUM&lt;br&gt;      tier ENUM" vertex="1">
+          <mxGeometry height="185" width="200" x="680" y="587.5" as="geometry" />
+        </mxCell>
+        <mxCell id="t_components_psu" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;components_psu&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  category_id → categories.id&lt;br&gt;      name VARCHAR(255)&lt;br&gt;      price DECIMAL(10,2)&lt;br&gt;      psu_wattage INT&lt;br&gt;      psu_efficiency VARCHAR(30)&lt;br&gt;      stock_status ENUM&lt;br&gt;      tier ENUM" vertex="1">
+          <mxGeometry height="185" width="210" x="675" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="t_components_storage" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;components_storage&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  category_id → categories.id&lt;br&gt;      name VARCHAR(255)&lt;br&gt;      price DECIMAL(10,2)&lt;br&gt;      storage_capacity INT&lt;br&gt;      storage_type VARCHAR(20)&lt;br&gt;      stock_status ENUM&lt;br&gt;      tier ENUM" vertex="1">
+          <mxGeometry height="190" width="210" x="675" y="1012.5" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-16" edge="1" parent="1" source="t_orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="t_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1470" y="130" />
+              <mxPoint x="1470" y="539" />
+              <mxPoint x="1740" y="539" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-21" edge="1" parent="1" source="t_orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="t_order_notifications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1400" y="130" />
+              <mxPoint x="1400" y="495" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-25" edge="1" parent="1" source="t_orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_order_items">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t_orders" parent="1" style="text;html=1;strokeColor=#7A0000;fillColor=#F8CECC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;orders&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;      order_number VARCHAR(50)&lt;br&gt;      total_amount DECIMAL(10,2)&lt;br&gt;      status ENUM&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="160" width="200" x="1100" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="t_order_items" parent="1" style="text;html=1;strokeColor=#7A0000;fillColor=#F8CECC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order_items&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  order_id → orders.id&lt;br&gt;      component_type VARCHAR(50)&lt;br&gt;      component_id INT&lt;br&gt;      quantity SMALLINT&lt;br&gt;      price DECIMAL(10,2)" vertex="1">
+          <mxGeometry height="160" width="200" x="1100" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="t_order_notifications" parent="1" style="text;html=1;strokeColor=#7A0000;fillColor=#F8CECC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;order_notifications&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;FK  order_id → orders.id&lt;br&gt;      type VARCHAR(50)&lt;br&gt;      message TEXT&lt;br&gt;      is_read TINYINT&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="170" width="170" x="1115" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-27" edge="1" parent="1" source="t_games" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_benchmarks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="t_games" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;games&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;      name VARCHAR(200)&lt;br&gt;      release_year SMALLINT&lt;br&gt;      genre VARCHAR(100)" vertex="1">
+          <mxGeometry height="120" width="170" x="1115" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="t_benchmarks" parent="1" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;benchmarks&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  component_id → components_gpu.id&lt;br&gt;FK  game_id → games.id&lt;br&gt;      resolution VARCHAR(20)&lt;br&gt;      settings VARCHAR(50)&lt;br&gt;      avg_fps INT&lt;br&gt;      min_fps INT&lt;br&gt;      max_fps INT" vertex="1">
+          <mxGeometry height="190" width="250" x="1075" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-13" edge="1" parent="1" source="t_support_tickets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="t_ticket_replies">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ch8MfiMsWrden-vo1_nh-14" edge="1" parent="1" source="t_support_tickets" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="t_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1900" y="135" />
+              <mxPoint x="1900" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="t_support_tickets" parent="1" style="text;html=1;strokeColor=#4D2D7A;fillColor=#E1D5E7;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;support_tickets&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  user_id → users.id&lt;br&gt;      ticket_number VARCHAR(50)&lt;br&gt;      subject VARCHAR(255)&lt;br&gt;      status ENUM&lt;br&gt;      priority ENUM&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="170" width="200" x="1650" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ticket_replies" parent="1" style="text;html=1;strokeColor=#4D2D7A;fillColor=#E1D5E7;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ticket_replies&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  ticket_id → support_tickets.id&lt;br&gt;FK  user_id → users.id&lt;br&gt;      message TEXT&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="135" width="210" x="1645" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="t_support_messages" parent="1" style="text;html=1;strokeColor=#4D2D7A;fillColor=#E1D5E7;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=14;fontFamily=Times New Roman;whiteSpace=pre;" value="&lt;div style=&quot;text-align: center;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;support_messages&lt;/span&gt;&lt;/div&gt;&lt;br&gt;PK  id INT&lt;br&gt;FK  order_id → orders.id&lt;br&gt;FK  user_id → users.id&lt;br&gt;      message TEXT&lt;br&gt;      is_admin TINYINT&lt;br&gt;      created_at TIMESTAMP" vertex="1">
+          <mxGeometry height="160" width="170" x="1665" y="420" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

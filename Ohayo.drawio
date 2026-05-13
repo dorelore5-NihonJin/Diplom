@@ -1,0 +1,423 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0" pages="1">
+  <diagram name="HyperPC Physical ERD" id="hyperpc-physical-erd">
+    <mxGraphModel dx="1800" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ══════════════════════════════ -->
+        <!--   КОЛОНКА 1: Пользователи     -->
+        <!-- ══════════════════════════════ -->
+
+        <!-- users -->
+        <mxCell id="t_users" value="users&#xa;&#xa;PK  id INT&#xa;      username VARCHAR(100)&#xa;      email VARCHAR(150)&#xa;      password_hash VARCHAR(255)&#xa;      role ENUM(user,admin,moderator)&#xa;      status ENUM(active,blocked,pending)&#xa;FK  blocked_by → users.id&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="270" height="170" as="geometry" />
+        </mxCell>
+
+        <!-- user_sessions -->
+        <mxCell id="t_user_sessions" value="user_sessions&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;      session_hash VARCHAR(255)&#xa;      ip_address VARCHAR(45)&#xa;      created_at TIMESTAMP&#xa;      expires_at TIMESTAMP" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="30" y="230" width="270" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- password_resets -->
+        <mxCell id="t_password_resets" value="password_resets&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;      token VARCHAR(255)&#xa;      expires_at TIMESTAMP&#xa;      used TINYINT" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="30" y="400" width="270" height="125" as="geometry" />
+        </mxCell>
+
+        <!-- user_block_log -->
+        <mxCell id="t_user_block_log" value="user_block_log&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;FK  blocked_by → users.id&#xa;      reason TEXT&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#23445D;fillColor=#DAE8FC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="30" y="555" width="270" height="125" as="geometry" />
+        </mxCell>
+
+        <!-- ══════════════════════════════ -->
+        <!--   КОЛОНКА 2: Сборки           -->
+        <!-- ══════════════════════════════ -->
+
+        <!-- user_builds -->
+        <mxCell id="t_user_builds" value="user_builds&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;      build_name VARCHAR(200)&#xa;      total_price DECIMAL(10,2)&#xa;      is_public TINYINT&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="360" y="30" width="270" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- build_components -->
+        <mxCell id="t_build_components" value="build_components&#xa;&#xa;PK  id INT&#xa;FK  build_id → user_builds.id&#xa;      component_type VARCHAR(50)&#xa;      component_id INT&#xa;      quantity SMALLINT" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="360" y="200" width="270" height="125" as="geometry" />
+        </mxCell>
+
+        <!-- build_comments -->
+        <mxCell id="t_build_comments" value="build_comments&#xa;&#xa;PK  id INT&#xa;FK  build_id → user_builds.id&#xa;FK  user_id → users.id&#xa;FK  parent_id → build_comments.id&#xa;      comment TEXT&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="360" y="355" width="270" height="145" as="geometry" />
+        </mxCell>
+
+        <!-- build_likes -->
+        <mxCell id="t_build_likes" value="build_likes&#xa;&#xa;PK  id INT&#xa;FK  build_id → user_builds.id&#xa;FK  user_id → users.id&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="360" y="530" width="270" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- component_reviews -->
+        <mxCell id="t_component_reviews" value="component_reviews&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;      component_type VARCHAR(50)&#xa;      component_id INT&#xa;      rating TINYINT&#xa;      status ENUM&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#6D8764;fillColor=#D5E8D4;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="360" y="670" width="270" height="155" as="geometry" />
+        </mxCell>
+
+        <!-- ══════════════════════════════ -->
+        <!--   КОЛОНКА 3: Компоненты       -->
+        <!-- ══════════════════════════════ -->
+
+        <!-- categories -->
+        <mxCell id="t_categories" value="categories&#xa;&#xa;PK  id INT&#xa;      name VARCHAR(100)&#xa;      slug VARCHAR(100)" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="30" width="260" height="95" as="geometry" />
+        </mxCell>
+
+        <!-- components_gpu -->
+        <mxCell id="t_components_gpu" value="components_gpu&#xa;&#xa;PK  id INT&#xa;FK  category_id → categories.id&#xa;      name VARCHAR(255)&#xa;      price DECIMAL(10,2)&#xa;      gpu_memory INT&#xa;      gpu_memory_type VARCHAR(10)&#xa;      stock_status ENUM&#xa;      tier ENUM" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="155" width="260" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- components_cpu -->
+        <mxCell id="t_components_cpu" value="components_cpu&#xa;&#xa;PK  id INT&#xa;FK  category_id → categories.id&#xa;      name VARCHAR(255)&#xa;      price DECIMAL(10,2)&#xa;      cpu_cores INT&#xa;      socket_type VARCHAR(50)&#xa;      stock_status ENUM&#xa;      tier ENUM" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="350" width="260" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- components_ram -->
+        <mxCell id="t_components_ram" value="components_ram&#xa;&#xa;PK  id INT&#xa;FK  category_id → categories.id&#xa;      name VARCHAR(255)&#xa;      price DECIMAL(10,2)&#xa;      ram_capacity INT&#xa;      ram_type VARCHAR(10)&#xa;      stock_status ENUM&#xa;      tier ENUM" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="545" width="260" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- components_mobo -->
+        <mxCell id="t_components_mobo" value="components_mobo&#xa;&#xa;PK  id INT&#xa;FK  category_id → categories.id&#xa;      name VARCHAR(255)&#xa;      price DECIMAL(10,2)&#xa;      mobo_chipset VARCHAR(50)&#xa;      socket_type VARCHAR(50)&#xa;      stock_status ENUM&#xa;      tier ENUM" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="740" width="260" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- components_psu -->
+        <mxCell id="t_components_psu" value="components_psu&#xa;&#xa;PK  id INT&#xa;FK  category_id → categories.id&#xa;      name VARCHAR(255)&#xa;      price DECIMAL(10,2)&#xa;      psu_wattage INT&#xa;      psu_efficiency VARCHAR(30)&#xa;      stock_status ENUM&#xa;      tier ENUM" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="935" width="260" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- components_storage -->
+        <mxCell id="t_components_storage" value="components_storage&#xa;&#xa;PK  id INT&#xa;FK  category_id → categories.id&#xa;      name VARCHAR(255)&#xa;      price DECIMAL(10,2)&#xa;      storage_capacity INT&#xa;      storage_type VARCHAR(20)&#xa;      stock_status ENUM&#xa;      tier ENUM" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1130" width="260" height="165" as="geometry" />
+        </mxCell>
+
+        <!-- ══════════════════════════════ -->
+        <!--   КОЛОНКА 4: Заказы + Бенчм.  -->
+        <!-- ══════════════════════════════ -->
+
+        <!-- orders -->
+        <mxCell id="t_orders" value="orders&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;      order_number VARCHAR(50)&#xa;      total_amount DECIMAL(10,2)&#xa;      status ENUM&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#7A0000;fillColor=#F8CECC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="30" width="260" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- order_items -->
+        <mxCell id="t_order_items" value="order_items&#xa;&#xa;PK  id INT&#xa;FK  order_id → orders.id&#xa;      component_type VARCHAR(50)&#xa;      component_id INT&#xa;      quantity SMALLINT&#xa;      price DECIMAL(10,2)" style="text;html=1;strokeColor=#7A0000;fillColor=#F8CECC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="200" width="260" height="140" as="geometry" />
+        </mxCell>
+
+        <!-- order_notifications -->
+        <mxCell id="t_order_notifications" value="order_notifications&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;FK  order_id → orders.id&#xa;      type VARCHAR(50)&#xa;      message TEXT&#xa;      is_read TINYINT&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#7A0000;fillColor=#F8CECC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="370" width="260" height="155" as="geometry" />
+        </mxCell>
+
+        <!-- games -->
+        <mxCell id="t_games" value="games&#xa;&#xa;PK  id INT&#xa;      name VARCHAR(200)&#xa;      release_year SMALLINT&#xa;      genre VARCHAR(100)" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="560" width="260" height="110" as="geometry" />
+        </mxCell>
+
+        <!-- benchmarks -->
+        <mxCell id="t_benchmarks" value="benchmarks&#xa;&#xa;PK  id INT&#xa;FK  component_id → components_gpu.id&#xa;FK  game_id → games.id&#xa;      resolution VARCHAR(20)&#xa;      settings VARCHAR(50)&#xa;      avg_fps INT&#xa;      min_fps INT&#xa;      max_fps INT" style="text;html=1;strokeColor=#6D4F00;fillColor=#FFE6CC;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1030" y="700" width="260" height="175" as="geometry" />
+        </mxCell>
+
+        <!-- ══════════════════════════════ -->
+        <!--   КОЛОНКА 5: Поддержка        -->
+        <!-- ══════════════════════════════ -->
+
+        <!-- support_tickets -->
+        <mxCell id="t_support_tickets" value="support_tickets&#xa;&#xa;PK  id INT&#xa;FK  user_id → users.id&#xa;      ticket_number VARCHAR(50)&#xa;      subject VARCHAR(255)&#xa;      status ENUM&#xa;      priority ENUM&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#4D2D7A;fillColor=#E1D5E7;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="30" width="260" height="155" as="geometry" />
+        </mxCell>
+
+        <!-- ticket_replies -->
+        <mxCell id="t_ticket_replies" value="ticket_replies&#xa;&#xa;PK  id INT&#xa;FK  ticket_id → support_tickets.id&#xa;FK  user_id → users.id&#xa;      message TEXT&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#4D2D7A;fillColor=#E1D5E7;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="215" width="260" height="125" as="geometry" />
+        </mxCell>
+
+        <!-- support_messages -->
+        <mxCell id="t_support_messages" value="support_messages&#xa;&#xa;PK  id INT&#xa;FK  order_id → orders.id&#xa;FK  user_id → users.id&#xa;      message TEXT&#xa;      is_admin TINYINT&#xa;      created_at TIMESTAMP" style="text;html=1;strokeColor=#4D2D7A;fillColor=#E1D5E7;align=left;verticalAlign=top;spacingLeft=8;spacingTop=6;rounded=0;fontSize=11;fontFamily=Courier New;whiteSpace=pre;" vertex="1" parent="1">
+          <mxGeometry x="1360" y="370" width="260" height="145" as="geometry" />
+        </mxCell>
+
+        <!-- ═══════════════════════════════════════ -->
+        <!-- СВЯЗИ — каждая стрелка с явным маршрутом-->
+        <!-- ═══════════════════════════════════════ -->
+
+        <!-- users → user_sessions (прямо вниз) -->
+        <mxCell id="e01" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_user_sessions">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- users → password_resets (прямо вниз через user_sessions) -->
+        <mxCell id="e02" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_password_resets">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="15" y="115" />
+              <mxPoint x="15" y="462" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → user_block_log (по левому краю) -->
+        <mxCell id="e03" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_user_block_log">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="10" y="182" />
+              <mxPoint x="10" y="580" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → user_builds (прямо вправо) -->
+        <mxCell id="e04" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.2;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_user_builds">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- users → build_comments (вправо с изгибом) -->
+        <mxCell id="e05" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_build_comments">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="115" />
+              <mxPoint x="340" y="383" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → build_likes (вправо с изгибом) -->
+        <mxCell id="e06" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.6;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_build_likes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="345" y="132" />
+              <mxPoint x="345" y="552" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → component_reviews -->
+        <mxCell id="e07" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_component_reviews">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="350" y="149" />
+              <mxPoint x="350" y="701" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → orders (вправо через col2, col3) -->
+        <mxCell id="e08" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_orders">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="10" />
+              <mxPoint x="1010" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → order_notifications -->
+        <mxCell id="e09" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_order_notifications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="10" />
+              <mxPoint x="1010" y="10" />
+              <mxPoint x="1010" y="401" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → support_tickets (вправо поверху) -->
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_support_tickets">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="10" />
+              <mxPoint x="1340" y="10" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → ticket_replies (поверху) -->
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_ticket_replies">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="10" />
+              <mxPoint x="1340" y="10" />
+              <mxPoint x="1340" y="278" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users → support_messages (поверху) -->
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_users" target="t_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="10" />
+              <mxPoint x="1340" y="10" />
+              <mxPoint x="1340" y="397" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- users self-ref: blocked_by (петля справа) -->
+        <mxCell id="e13" value="blocked_by" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.1;exitDx=0;exitDy=0;entryX=1;entryY=0.9;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="t_users" target="t_users">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="47" />
+              <mxPoint x="315" y="183" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- user_builds → build_components (вниз) -->
+        <mxCell id="e14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_user_builds" target="t_build_components">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- user_builds → build_comments (вниз) -->
+        <mxCell id="e15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_user_builds" target="t_build_comments">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="441" y="185" />
+              <mxPoint x="441" y="355" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- user_builds → build_likes (вниз по правому краю) -->
+        <mxCell id="e16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.7;exitY=1;exitDx=0;exitDy=0;entryX=0.7;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_user_builds" target="t_build_likes">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="549" y="185" />
+              <mxPoint x="549" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- build_comments self-ref: parent_id -->
+        <mxCell id="e17" value="parent_id" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.3;exitDx=0;exitDy=0;entryX=1;entryY=0.7;entryDx=0;entryDy=0;fontSize=10;" edge="1" parent="1" source="t_build_comments" target="t_build_comments">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="645" y="398" />
+              <mxPoint x="645" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- categories → components_gpu -->
+        <mxCell id="e18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_categories" target="t_components_gpu">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- categories → components_cpu -->
+        <mxCell id="e19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.4;exitY=1;exitDx=0;exitDy=0;entryX=0.4;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_categories" target="t_components_cpu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="804" y="130" />
+              <mxPoint x="804" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- categories → components_ram -->
+        <mxCell id="e20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_categories" target="t_components_ram">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="778" y="130" />
+              <mxPoint x="778" y="545" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- categories → components_mobo -->
+        <mxCell id="e21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.2;exitY=1;exitDx=0;exitDy=0;entryX=0.2;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_categories" target="t_components_mobo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="752" y="130" />
+              <mxPoint x="752" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- categories → components_psu -->
+        <mxCell id="e22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_categories" target="t_components_psu">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="685" y="77" />
+              <mxPoint x="685" y="968" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- categories → components_storage -->
+        <mxCell id="e23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0;exitY=0.7;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_categories" target="t_components_storage">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="88" />
+              <mxPoint x="680" y="1163" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- components_gpu → benchmarks -->
+        <mxCell id="e24" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.2;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_components_gpu" target="t_benchmarks">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="238" />
+              <mxPoint x="1010" y="735" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- games → benchmarks (вниз) -->
+        <mxCell id="e25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_games" target="t_benchmarks">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- orders → order_items (вниз) -->
+        <mxCell id="e26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_orders" target="t_order_items">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- orders → order_notifications (вниз) -->
+        <mxCell id="e27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_orders" target="t_order_notifications">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1108" y="175" />
+              <mxPoint x="1108" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- orders → support_messages (вправо) -->
+        <mxCell id="e28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_orders" target="t_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1295" y="100" />
+              <mxPoint x="1295" y="443" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+        <!-- support_tickets → ticket_replies (вниз) -->
+        <mxCell id="e29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_support_tickets" target="t_ticket_replies">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- support_tickets → support_messages (вниз) -->
+        <mxCell id="e30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=ERmany;startArrow=ERone;exitX=0.3;exitY=1;exitDx=0;exitDy=0;entryX=0.3;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="t_support_tickets" target="t_support_messages">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1438" y="190" />
+              <mxPoint x="1438" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
